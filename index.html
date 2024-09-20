@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de finanzas</title>
+    <link rel="shortcut icon" href="./icons/icons8-bolsa-de-dinero-32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/header.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/body.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/ingresos.js"></script>
+    <script type="module" src="./js/egresos.js"></script>
+    <script type="module" src="./js/form.js"></script>
+</head>
+<body>
+    <header>
+       
+       <h1>Gestor de finanzas</h1>
+       <section id="container-popular">
+        <div id="container-presupuesto"> 
+            <h3>Presupuesto Disponible:$</h3>
+            <h3 class="monto" id="presupuesto">50000</h3>
+        </div>
+        <div id="container-ingreso-egresos">
+            <div class="mini-container-total" id="container-ingresos">
+                <h4>Ingresos</h4>
+                <h4 class="monto">0</h4>
+            </div>
+            <div class="mini-container-total" id="container-egresos">
+                <h4>Egresos</h4>
+                <h4 class="monto">0</h4>
+            </div>
+           </div>
+       </section>
+    </header>
+    <main>
+        <div id="container-form">
+            
+            
+            <form class="form" id="formularioInsert">
+                <div>
+                    <label for="descripcion">
+                        Descripción
+                        <input type="text" name="descripcion" id="descripcion">
+                    </label>
+                    <label for="monto">
+                        Cantidad
+                        <input type="text" name="monto" id="monto">
+                    </label>
+                </div>
+                <select id="select-opcion">
+                    <option value="0">Selecciona una opción</option>
+                    <option value="Ingreso">Ingreso</option>
+                    <option value="Egreso">Egresos</option>
+                </select>
+                <button id="enviar" >Agregar</button>
+            </form>
+            
+        </div>
+        <section id="container-filtrar">
+            <form>
+                <h5>Filtrar</h5>
+                <label for="hecha">
+                    Fecha
+                    <input type="date" name="fecha" id="fecha">
+                </label>
+            </form>
+        </section>
+       <div class="main">
+            <section class="section">
+                <h6 id="title-ingreso">Ingresos</h6>
+                <div>
+                    <article class="container-title">
+
+                        <p>Código</p>
+                        <p>Descripción</p>
+                        <p>Cantidad</p>
+                        <p>Eliminar</p>
+                    </article>
+                </div>
+                <div class="container-articles" id="container-in-ingreso">    
+                </div>
+            </section>
+            <section class="section">
+                <h6 id="title-egreso">Egresos</h6>
+                <div>
+                    <article class="container-title">
+                        <p>Código</p>
+                        <p>Descripción</p>
+                        <p>Cantidad</p>
+                        <p>Eliminar</p>
+                    </article>
+                </div>
+                <div class="container-articles">
+                </div>
+            </section>
+       </div>
+    </main>
+    <footer>
+        <section>
+            <div id="container-redes-sociales">
+                <a href="https://www.instagram.com/javisuper_/" target="_blank"><img src="./icons/instagram.png" alt="logo-instagram"></a>
+                <a href="https://github.com/SuperJav?tab=repositories" target="_blank"><img src="./icons/github.png" alt="logo-github"></a>
+                <a href="https://www.linkedin.com/in/javielito-ramirez-brioso-53402321b/" target="_blank"><img src="./icons/linkedin.png" alt="logo-linkedin"></a>
+            </div>
+            <div>
+                Developer Super Javi🧑🏽‍💻
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

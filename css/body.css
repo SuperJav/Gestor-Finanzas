@@ -1,0 +1,274 @@
+main{
+    background-image:url("../img/fondo.svg");
+}
+.main{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5em;
+}
+
+.section{
+    background: rgba(255,255,255,0.35);
+    -webkit-backdrop-filter: blur(11px);
+    backdrop-filter: blur(11px);
+    border: 1px solid rgba(255,255,255,0.175);
+    width: 40%;
+}
+
+#container-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    margin-top: 3em;
+    background: rgba(255,255,255,0.35);
+    backdrop-filter: blur(11px);
+    border: 1px solid rgba(255,255,255,0.175);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+}
+label{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+}
+input{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    border-bottom: 3px solid rgb(154, 152, 152);
+    border-radius: 15%;
+    color: rgb(64, 64, 64);
+}
+input:focus {
+    outline: none;
+}
+select{
+    padding: 5px;
+    margin-bottom: 10px;
+    color: rgb(64, 64, 64);
+    border-radius: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background-color: #09d4bd;
+    color: aliceblue;
+    border-style:hidden;
+
+}
+option{
+    padding: 5px;
+    margin-bottom: 10px;
+    color: rgb(64, 64, 64);
+    border-radius: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background-color: #09d4bd;
+    color: aliceblue;
+    border-style:hidden;
+}
+#enviar{
+    width: 50%;
+    color:#09d4bd;
+    font-weight: 800;
+    background-color: #151fabf2;
+    border-radius: 25px;
+    padding: 5px;
+}
+#container-filtrar{
+    border: 2px solid;
+    width: 400px;
+    margin-top: 3em;
+    background: rgba(255,255,255,0.35);
+    backdrop-filter: blur(11px);
+    border: 1px solid rgba(255,255,255,0.175);
+}
+#container-filtrar form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#container-filtrar form h5{
+    font-size: 1.5rem;
+    font-family: 'DACFACEone',monospace;
+    letter-spacing: 5px;
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+#container-filtrar form input{
+    padding: 5px;
+    border-radius: 0%;
+    background-color: #151fabf2;
+    color: aliceblue;
+    font-weight: 800;
+}
+#title-ingreso{
+    font-family: 'DACFACEone',monospace;
+    font-size: 1.2rem;
+    color: rgba(11, 221, 57, 0.692);
+    letter-spacing: 0.5rem;
+    text-shadow: 3px 3px 20px rgb(22, 164, 50);
+    padding-left: 10px;
+    cursor: pointer;
+}
+#title-egreso{
+    color:  rgba(212, 14, 14, 0.694);
+    font-family: 'DACFACEone',monospace;
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
+    text-shadow: 3px 3px 20px rgb(183, 18, 18);
+    padding-left: 10px;
+    cursor: pointer;
+}
+.container-articles{
+    overflow-y:scroll;
+    scrollbar-width:thin;
+    scrollbar-color: #e3e5f4db #151fab88;
+    overflow-x: hidden;
+    height: 350px;
+}
+
+.article-ingresos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    align-items: center;
+    font-family:monospace;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+    color:rgb(22, 164, 50);
+    margin-bottom: 5px;
+    box-shadow: 3px 3px 10px 3px #dddddd9e;
+}
+.container-descricion-fecha{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: start;
+}
+.fecha{
+    font-size: 0.8rem;
+}
+.button-delete{
+    background-color: rgba(240, 248, 255, 0);
+    width: 3rem;
+    border: none;
+    
+}
+.button-delete img{
+    width: 100%;
+}
+.container-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-family: 'DACFACEone',monospace;
+    font-size: 0.8rem;
+    border-radius: 25px;
+    box-shadow: -8.5px 12px 10.5px -1.5px #dddddd;
+    box-shadow: -8.5px 12px 10px -4px #dddddd;
+    cursor: pointer;
+}
+.article-engresos{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly; 
+    align-items: center;
+    font-family:monospace;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+    color:rgb(237, 11, 11);
+    margin-bottom: 5px;
+    box-shadow: 3px 3px 10px 3px #dddddd9e;
+}
+.Descripcion{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 950px) {
+    .container-title{
+        font-size: 0.6rem;
+    }
+    .article-ingresos{
+        font-size: 1rem;
+    }
+    .article-engresos{
+        font-size: 1rem;
+    }
+    .button-delete img{
+        width: 75%;
+    }
+    #title-ingreso{
+        font-size: 1rem;
+    }
+    #title-egreso{
+        font-size: 1rem;
+    }
+
+}
+@media screen and (max-width: 750px) {
+    #enviar{
+        width: 50%;
+    } 
+    form div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #container-filtrar{
+        width: 250px;
+        margin-top: 2em;
+    }
+    #container-filtrar form h5{
+        font-size: 1rem;
+        letter-spacing: 3px;  
+        cursor: pointer;
+    }
+    #container-filtrar form input{
+        padding: 3px;
+        font-weight: 600;
+    }
+    .main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .container-title{
+        font-size: 0.5rem;
+    }
+    .article-ingresos{
+        font-size: 0.8rem;
+    }
+    .article-engresos{
+        font-size: 0.8rem;
+    }
+    .button-delete img{
+        width: 65%;
+    }
+    #title-ingreso{
+        font-size: 0.8rem;
+    }
+    #title-egreso{
+        font-size: 0.8rem;
+    }
+}
