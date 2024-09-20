@@ -134,11 +134,7 @@ h4{
         justify-content: center;
         align-items: center;
     } 
-    #container-popular{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    
     .mini-container-total{
         width: 140px;
         height: 40px;
